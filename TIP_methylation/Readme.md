@@ -1,7 +1,7 @@
 # Plot DNA methylation around insertions
 
 This directory contains scripts to plot DNA methylation in the flanking regions of TE insertions in samples with vs without the insertion.
-It takes methylation information from unionbed files that can be generated with code available in [this](https://github.com/Dario-Galanti/WGBS_downstream/tree/main) repository. <br/>
+It takes methylation information from unionbed files that can be generated with code available at [this](https://github.com/Dario-Galanti/WGBS_downstream/tree/main) repository. <br/>
 
 [met_TIP_flanks.sh](https://github.com/acontrerasg/Tarvense_transposon_dynamics/blob/main/TIP_methylation/met_TIP_flanks.sh) <br/>
 This bash script uses a bed file of TIPs and a methylation unionbed file (samples as columns and positions as rows, see [here](https://github.com/Dario-Galanti/WGBS_downstream/tree/main) for more explanation) to calculate methylation in the flanking regions of TE insertions, in samples with and without the insertion. More information on the input files are in the beginning of the script.
