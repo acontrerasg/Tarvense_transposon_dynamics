@@ -17,6 +17,5 @@ This python script is required to run the previous one. It calculates methylatio
 [plot_TIPflank_met.R](https://github.com/acontrerasg/Tarvense_transposon_dynamics/blob/main/TIP_methylation/plot_TIPflank_met.R) <br/>
 This R script plots methylation of bins covering the flanks of TE insertions, producing output similar to the one below:
 
-![image](https://github.com/acontrerasg/Tarvense_transposon_dynamics/assets/58292612/96f6718c-cb5e-4a9d-b305-c333ad7eeef9)
-
+![image](https://github.com/acontrerasg/Tarvense_transposon_dynamics/assets/58292612/fa4b5a06-e675-4891-b6f2-d4cf5e4c7639)
 
