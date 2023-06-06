@@ -1,11 +1,10 @@
 **Snapshots are stored here.**
 
-In order to manually validate our TIPs we  manually inspected a subset of TIPs in three categories: 
-  True positives: If the TIP was valid.
-  False positives: If the TIP was wrong.
-  Ambiguous: If we were not confident about its classification.
- 
- 
+In order to manually validate our TIPs we  manually inspected a subset of TIPs in three categories: <br>
+
+  True positives: If the TIP was valid. <br>
+  False positives: If the TIP was wrong. <br>
+  Ambiguous: If we were not confident about its classification. <br>
 
 Folders are orgganized as follows:
 - First level organizes files by region: `AM CN DE FR SE US` <br>
