@@ -1,8 +1,8 @@
 **Snapshots are stored here.**
 Here we deposited the snapsots used to manually validate a fraction of identified TIPs.
-In total, we evalyated 2448 TIPs. 1744 of those were true positives (71%), 518 false positives and 183 ambigous. 
+In total, we evaluated 2448 TIPs. 1744 of those were true positives (71%), 518 false positives and 183 ambigous. 
 
-In order to manually validate our TIPs we  manually inspected a subset of TIPs in three categories: <br>
+In order to manually validate our TIPs we visually inspected a subset of TIPs  via snapshots and divide those in three categories: <br>
   True positives: If the TIP was valid. <br>
   False positives: If the TIP was wrong. <br>
   Ambiguous: If we were not confident about its classification. <br>
