@@ -1,0 +1,2 @@
+**Snapshots are stored here.**
+
