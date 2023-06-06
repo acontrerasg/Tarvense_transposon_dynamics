@@ -8,7 +8,7 @@ In order to manually validate our TIPs we  manually inspected a subset of TIPs i
   Ambiguous: If we were not confident about its classification. <br>
 
 Folders are orgganized as follows:
-- First level organizes files by region: `AM CN DE FR SE US` <br>
+- First level organizes files by region: `AM CN DE FR SE NL FR US` <br>
 - Second level organizes files by classification result: `01_True_pos 02_False_pos 03_ambigous`
 
 
