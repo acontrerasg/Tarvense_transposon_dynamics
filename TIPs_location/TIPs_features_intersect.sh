@@ -1,7 +1,9 @@
 ## Author: Dario Galanti 2022
-## Aim: Calculate number of TIPs overlapping with different genomic features and then correct it for genome space covered by each genomic feature.
-## Input 1: List of TIPs of different Superfamilies or different geographic locations (1 bed file per group)
+## Aim: Count TIPs overlapping with different genomic features and then correct it for genome space covered by each genomic feature (TIPs density).
+## Input 1: List of TIPs of different Superfamilies or different geographic locations (Directory with 1 bed file per group, iterable through wildcard)
 ## Input 2: Bed files of genomic features
+
+# NB: Feature filenames must contain feature name just before file extention eg. "Ta_v5_genes.bed"
 
 ## Location
 work=/scr/episan/RP07/TIPs
@@ -9,7 +11,7 @@ indir=${work}/insertions_withUS/individuals_TIPs
 ref_index=/scr/episan/RP07/Thlaspi_genome/Ta_v5_genome/final.fasta.fai
 #country_dir=${work}/insertions_withUS/TIPs_byCountry
 SupFam_dir=${work}/insertions_withUS/TIPs_bySupFam_merged
-Fam_dir=${work}/insertions_withUS/TIPs_byFam_merged
+#Fam_dir=${work}/insertions_withUS/TIPs_byFam_merged
 fout=${work}/insertions_withUS/Features_intersect_SupFam_TIPs.txt
 
 ## Define feature bed files
@@ -21,20 +23,6 @@ TEs=${featureDir}/Ta_v5_TEs.bed						# NB: Feature filenames must contain featur
 promoters=${featureDir}/Ta_v5_promoters.bed			# NB: Feature filenames must contain feature name just before file extention
 intergenic=${featureDir}/Ta_v5_intergenic.bed		# NB: Feature filenames must contain feature name just before file extention
 
-### TIPs BY SuperFamily
-#All_TIPs=All_TIPS_cov_corrected.tsv
-#SupFamArr=($(tail -n+2 $All_TIPs | cut -f14 | sort | uniq))
-#FamArr=($(tail -n+2 $All_TIPs | cut -f6 | sort | uniq))
-#ClassArr=($(tail -n+2 $All_TIPs | cut -f14 | cut -c1-2 | sort | uniq))
-#TEgroupArr=("${SupFamArr[@]}" "${ClassArr[@]}" "R")
-#
-#for group in ${TEgroupArr[@]}
-#do
-# group_fout1=${SupFam_dir}/TA_${group}_insertions.bed
-# group_fout2=${SupFam_dir}/Genes_2kbFlk_${group}_TIPs.txt
-# tail -n+2 $All_TIPs | grep -P '\t'$group | awk 'OFS="\t"{print $3,$4,$5,$6,$1,$2}' | sort -k1,1V -k2,2n > $group_fout1
-# bedtools merge -i $group_fout1 | bedtools slop -i stdin -g $ref_index -b 2000 | bedtools intersect -a $Genes -b stdin -u | cut -f5 > $group_fout2
-#done
 
 # MAKE FILE ARRAYS
 reg_arr=( global $genes $CDS $introns $TEs $promoters $intergenic )
