@@ -1,8 +1,11 @@
 #!/usr/bin/env Rscript
 
-# This script takes the  mean of both read depth corrrected files calculated with mosdepth and bwa mem and averages both of them,
+# This script takes the mean of both read depth corrrected files calculated with mosdepth and bwa mem and averages both of them,
 # then it calculates median coverage. LAstly, assigns regions of the genome with 3 times lower than the median 
 # coverage as LOW; 3 times higher than median as HIGH and the rest as PASS,
+
+
+library(dplyr)
 
 GCcorected_depth_means <- read.delim("./GCcorected_depth_means.bed", header=FALSE)
 
