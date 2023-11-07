@@ -30,10 +30,8 @@ python3 ${dante_filt} --dom_gff ./dante_tmp/thlaspi_consensi_class_dante.gff3  \
 
 
 # Autonomy evaluation: 
-
-# Then searched for sequence homology to known TE proteins (transposases, replicases and integrases) using hmmscan.
 # We further divided families as autonomous or non autonomous based on these results.
-# DNA families with at least a member that matched a transposase profile  TPase (or HEL1/HEL2  in case of helitrons)
+# DNA families with  their consensus sequence containing a TPase (or HEL1/HEL2 in case of helitrons) were copnsidered autonomous.
 # NON-LTR families (LINES) just need a reverse transcriptase  (RT) )
 # and  LTR families with GAG, protease (PROT), reverse transcriptase (RT), ribonuclease H (RH) and integrase (INT). were assigned as autonomous and the rest as non autonomous.
 
