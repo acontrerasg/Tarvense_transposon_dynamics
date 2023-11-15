@@ -1,4 +1,4 @@
-Age estimation of TIPs
+# Age estimation of TIPs
 
 Contains two scripts to estimate the age of TIPs in large sequencing datasets, starting from a matrix of presence absence of TIPs
 
