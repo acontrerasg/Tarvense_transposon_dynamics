@@ -2,8 +2,8 @@ SNP CALLING
 
 Scripts for calling short variants in GATK4.<br/>
 Workflow for read mapping (bwa), short variant calling (GATK4) and filtering from short-read Whole Genome Sequencing data, for large datasets. <br/>
+The original repository is deposited at [BinAC_varcalling](https://github.com/Dario-Galanti/BinAC_varcalling/tree/main).
 System setup: linux-based cluster with PBS queueing system.
-The original repository is deposited at [BinAC_varcalling]([https://github.com/Dario-Galanti/multipheno_GWAS/tree/main/gemmaGWAS](https://github.com/Dario-Galanti/BinAC_varcalling/tree/main))
 
 The workflow is meant for the analysis of paired-end short reads. Based on the GATK4 best practices [for germline short variant discovery](https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels-), is specifically customized for fairly large WGS datasets of non-model species. It can handle a large sample numbers and large and fragmented genomes. <br/>
 <br/> 
