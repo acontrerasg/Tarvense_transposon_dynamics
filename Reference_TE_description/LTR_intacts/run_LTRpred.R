@@ -3,16 +3,16 @@
 args = commandArgs(trailingOnly=TRUE)
 
 if (length(args) < 2) {
-  stop("First provide the genome path, second the Dfam database", call.=FALSE)
+  stop("Provide the genome path and the number of cores", call.=FALSE)
 } else if (length(args) > 2) {
- stop("More than two arguments were created", call.=FALSE)
+ stop("More than two arguments were given", call.=FALSE)
 }
 
 #Inputs
 genome=args[1]
-Dfam_db=args[2]
+cores=args[2]
+Dfam_db="NULL"
 mutation_rate= 9.1 * 1E-9
-cores=48
 similar = 80                                                                                                                                                                                                                                                                                                         
 mintsd = 4                                                                                                                                                                                                                                                                                                            
 maxtsd = 18 
