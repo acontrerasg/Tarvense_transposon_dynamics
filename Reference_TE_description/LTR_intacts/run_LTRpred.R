@@ -19,8 +19,8 @@ maxtsd = 18
 overlaps = "best"
 tRNAs =  paste0(system.file("tRNAs/", package = "LTRpred"),"plants-tRNA_cat.fa")
 hmms = paste0(system.file("HMMs/", package = "LTRpred"), "hmm_*")
-cluster     = TRUE,
-clust.sim   = 0.8,
+cluster     = TRUE
+clust.sim   = 0.8
 
 #Main
 LTRpred::LTRpred(
