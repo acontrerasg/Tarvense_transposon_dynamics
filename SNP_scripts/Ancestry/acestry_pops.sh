@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install Last withg ananconda:
-## mamba install -c bioconda/label/cf201901 last  at fresh env /ebio/abt6_projects8/Tarvense_TE/code/conda_envs/LAST_tool
+## mamba install -c bioconda/label/cf201901 last  at fresh conda_envs/LAST_tool
 
 #lastdb -P0 -uNEAR -R01 ../thlaspi_final-3-NEAR ../thlaspi.fa
 #lastdb -P0 -uMAM4 -R01 ../thlaspi_final-3-MAM8 ../thlaspi.fa
